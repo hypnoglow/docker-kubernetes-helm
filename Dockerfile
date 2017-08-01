@@ -16,6 +16,6 @@ RUN set -ex \
     && mv linux-amd64/helm /usr/local/bin/helm \
     && rm -rf linux-amd64
 
-RUN apk del .deps
+RUN helm init --client-only
 
 CMD ["helm"]
