@@ -1,10 +1,10 @@
 FROM alpine:3.6
 LABEL maintainer="Igor Zibarev <zibarev.i@gmail.com>"
 
-ENV HELM_VERSION 2.5.1
+ENV HELM_VERSION 2.6.0
 ENV HELM_FILENAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
-RUN apk add --no-cache --virtual .deps curl
+RUN apk add --no-cache --virtual .deps curl bash
 
 RUN set -ex \
     && KUBECTL_VERSION=$(curl -sL https://storage.googleapis.com/kubernetes-release/release/stable.txt) \
