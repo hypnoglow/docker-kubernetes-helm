@@ -5,7 +5,7 @@ Image providing [kubernetes](http://kubernetes.io/) tools `kubectl` and `helm`.
 ## Supported tags and respective `Dockerfile` links
 
 - `latest` [Dockerfile](https://github.com/hypnoglow/docker-kubernetes-helm/blob/master/Dockerfile)
-- `v2.6.0` [v2.6.0/Dockerfile](https://github.com/hypnoglow/docker-kubernetes-helm/blob/v2.6.0/Dockerfile)
+- `v2.6.1` [v2.6.0/Dockerfile](https://github.com/hypnoglow/docker-kubernetes-helm/blob/v2.6.1/Dockerfile)
 - `v2.5.1` [v2.5.1/Dockerfile](https://github.com/hypnoglow/docker-kubernetes-helm/blob/v2.5.1/Dockerfile)
 
 ## Overview
