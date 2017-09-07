@@ -1,5 +1,9 @@
 # kubernetes-helm
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/hypnoglow/kubernetes-helm.svg)]()
+[![Docker Automated buil](https://img.shields.io/docker/automated/hypnoglow/kubernetes-helm.svg)]()
+[![Docker Build Statu](https://img.shields.io/docker/build/hypnoglow/kubernetes-helm.svg)]()
+
 Image providing [kubernetes](http://kubernetes.io/) tools `kubectl` and `helm`.
 
 ## Supported tags and respective `Dockerfile` links
