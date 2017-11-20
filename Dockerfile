@@ -1,13 +1,13 @@
 FROM alpine:3.6
 LABEL maintainer="Igor Zibarev <zibarev.i@gmail.com>"
 
-ENV HELM_VERSION 2.6.1
+ENV KUBECTL_VERSION v1.8.3
+ENV HELM_VERSION 2.7.2
 ENV HELM_FILENAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 RUN apk add --no-cache --virtual .deps curl bash
 
 RUN set -ex \
-    && KUBECTL_VERSION=$(curl -sL https://storage.googleapis.com/kubernetes-release/release/stable.txt) \
     && curl -sSL https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
     && chmod +x /usr/local/bin/kubectl
 
