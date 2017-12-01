@@ -5,7 +5,7 @@ ENV KUBECTL_VERSION v1.8.3
 ENV HELM_VERSION 2.7.2
 ENV HELM_FILENAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
-RUN apk add --no-cache --virtual .deps curl bash
+RUN apk add --no-cache --virtual .deps curl bash git
 
 RUN set -ex \
     && curl -sSL https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
@@ -17,5 +17,6 @@ RUN set -ex \
     && rm -rf linux-amd64
 
 RUN helm init --client-only
+RUN helm plugin install https://github.com/technosophos/helm-template
 
 CMD ["helm"]
