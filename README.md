@@ -35,7 +35,6 @@ deploy-staging:
         --namespace="${KUBE_NAMESPACE}"
     - kubectl config use-context ${KUBE_NAME}
   script:
-    - helm init --client-only
     - helm install release-name chart/name --namespace ${KUBE_NAMESPACE}
 
 ...
