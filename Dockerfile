@@ -16,6 +16,4 @@ RUN set -ex \
     && mv linux-amd64/helm /usr/local/bin/helm \
     && rm -rf linux-amd64
 
-RUN helm init --client-only
-
 CMD ["helm"]
