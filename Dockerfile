@@ -1,7 +1,7 @@
 FROM alpine:3.6
 LABEL maintainer="Igor Zibarev <zibarev.i@gmail.com>"
 
-ENV KUBECTL_VERSION v1.9.4
+ENV KUBECTL_VERSION v1.10.2
 ENV HELM_VERSION 2.9.1
 ENV HELM_FILENAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
