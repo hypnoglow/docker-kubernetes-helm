@@ -1,8 +1,8 @@
 FROM alpine:3.6
 LABEL maintainer="Igor Zibarev <zibarev.i@gmail.com>"
 
-ENV KUBECTL_VERSION v1.12.2
-ENV HELM_VERSION 2.12.1
+ENV KUBECTL_VERSION v1.12.4
+ENV HELM_VERSION 2.12.2
 ENV HELM_FILENAME helm-v${HELM_VERSION}-linux-amd64.tar.gz
 
 RUN apk add --no-cache --virtual .deps curl bash
